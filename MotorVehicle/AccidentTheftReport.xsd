@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AccidentTheftReport" targetNamespace="http://tempuri.org/AccidentTheftReport.xsd" xmlns:mstns="http://tempuri.org/AccidentTheftReport.xsd" xmlns="http://tempuri.org/AccidentTheftReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Accident_DetailsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Accident_DetailsConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.MotorVehicle.Properties.Settings.GlobalReference.Default.Accident_DetailsConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AccdetTableAdapter" GeneratorDataComponentClassName="AccdetTableAdapter" Name="Accdet" UserDataComponentName="AccdetTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Accident_DetailsConnectionString (Settings)" DbObjectName="[Accident Details].dbo.Accdet" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Police_Station, Veh_num, Driver_name, Report, Aadhar_num, Email_ID, RefId FROM dbo.Accdet</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Police_Station" DataSetColumn="Police_Station" />
+              <Mapping SourceColumn="Veh_num" DataSetColumn="Veh_num" />
+              <Mapping SourceColumn="Driver_name" DataSetColumn="Driver_name" />
+              <Mapping SourceColumn="Report" DataSetColumn="Report" />
+              <Mapping SourceColumn="Aadhar_num" DataSetColumn="Aadhar_num" />
+              <Mapping SourceColumn="Email_ID" DataSetColumn="Email_ID" />
+              <Mapping SourceColumn="RefId" DataSetColumn="RefId" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AccidentTheftReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="AccidentTheftReport" msprop:Generator_UserDSName="AccidentTheftReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Accdet" msprop:Generator_TableClassName="AccdetDataTable" msprop:Generator_TableVarName="tableAccdet" msprop:Generator_TablePropName="Accdet" msprop:Generator_RowDeletingName="AccdetRowDeleting" msprop:Generator_RowChangingName="AccdetRowChanging" msprop:Generator_RowEvHandlerName="AccdetRowChangeEventHandler" msprop:Generator_RowDeletedName="AccdetRowDeleted" msprop:Generator_UserTableName="Accdet" msprop:Generator_RowChangedName="AccdetRowChanged" msprop:Generator_RowEvArgName="AccdetRowChangeEvent" msprop:Generator_RowClassName="AccdetRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Police_Station" msprop:Generator_ColumnVarNameInTable="columnPolice_Station" msprop:Generator_ColumnPropNameInRow="Police_Station" msprop:Generator_ColumnPropNameInTable="Police_StationColumn" msprop:Generator_UserColumnName="Police_Station">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Veh_num" msprop:Generator_ColumnVarNameInTable="columnVeh_num" msprop:Generator_ColumnPropNameInRow="Veh_num" msprop:Generator_ColumnPropNameInTable="Veh_numColumn" msprop:Generator_UserColumnName="Veh_num">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Driver_name" msprop:Generator_ColumnVarNameInTable="columnDriver_name" msprop:Generator_ColumnPropNameInRow="Driver_name" msprop:Generator_ColumnPropNameInTable="Driver_nameColumn" msprop:Generator_UserColumnName="Driver_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Report" msprop:Generator_ColumnVarNameInTable="columnReport" msprop:Generator_ColumnPropNameInRow="Report" msprop:Generator_ColumnPropNameInTable="ReportColumn" msprop:Generator_UserColumnName="Report">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Aadhar_num" msprop:Generator_ColumnVarNameInTable="columnAadhar_num" msprop:Generator_ColumnPropNameInRow="Aadhar_num" msprop:Generator_ColumnPropNameInTable="Aadhar_numColumn" msprop:Generator_UserColumnName="Aadhar_num">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Email_ID" msprop:Generator_ColumnVarNameInTable="columnEmail_ID" msprop:Generator_ColumnPropNameInRow="Email_ID" msprop:Generator_ColumnPropNameInTable="Email_IDColumn" msprop:Generator_UserColumnName="Email_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RefId" msprop:Generator_ColumnVarNameInTable="columnRefId" msprop:Generator_ColumnPropNameInRow="RefId" msprop:Generator_ColumnPropNameInTable="RefIdColumn" msprop:Generator_UserColumnName="RefId" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
